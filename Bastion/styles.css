@@ -145,6 +145,21 @@ a:focus-visible, button:focus-visible{
   background: rgba(224,164,88,0.07);
 }
 
+.nav-group li.nav-sub{ margin-left: 14px; }
+.nav-group li.nav-sub a{
+  font-size: 0.83rem;
+  padding: 4px 8px;
+  color: var(--bone-dim);
+  opacity: 0.82;
+}
+.nav-group li.nav-sub a::before{
+  content: "\2013";
+  margin-right: 6px;
+  color: var(--rust);
+  opacity: 0.7;
+}
+.nav-group li.nav-sub a:hover{ opacity: 1; }
+
 .sidebar-note{
   margin-top: 34px;
   padding: 14px 14px;
@@ -575,4 +590,66 @@ footer.archive-footer{
   .sidebar{ border-right: none; border-bottom: 1px solid var(--coal-line); }
   main{ padding: 30px 22px 60px; }
   .hero h1{ font-size: 2.2rem; }
+}
+
+/* Biography per-book accordion */
+.bio-book{
+  margin: 16px 0;
+  border: 1px solid var(--coal-line);
+  border-radius: 4px;
+  background: rgba(255,255,255,0.015);
+  padding: 0 16px;
+}
+.bio-book summary{
+  cursor: pointer;
+  padding: 13px 0;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--amber);
+  list-style: none;
+  user-select: none;
+}
+.bio-book summary::-webkit-details-marker{ display:none; }
+.bio-book summary::before{
+  content: "\25B8";
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform .15s ease;
+  color: var(--rust);
+}
+.bio-book[open] summary::before{ transform: rotate(90deg); }
+.bio-book[open]{ padding-bottom: 14px; }
+.bio-book > h3:first-of-type{ margin-top: 4px; }
+
+/* Lean minor-character page */
+.lean-infobox{ }
+.lean-infobox dl{ margin: 0; }
+.cut-note{
+  margin-top: 26px;
+  padding: 12px 14px;
+  border-left: 2px solid var(--coal-line);
+  background: rgba(255,255,255,0.015);
+  font-size: 0.85rem;
+  color: var(--bone-dim);
+}
+.character-index-row{
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--coal-line);
+}
+.character-index-row:last-child{ border-bottom: none; }
+.character-index-row .idx-name{ font-family: var(--display); font-weight: 600; color: var(--bone); white-space: nowrap; }
+.character-index-row .idx-name a{ color: var(--bone); }
+.character-index-row .idx-name a:hover{ color: var(--amber); }
+.character-index-row .idx-desc{ color: var(--bone-dim); font-size: 0.88rem; text-align: right; }
+.index-group-label{
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin: 28px 0 4px;
 }

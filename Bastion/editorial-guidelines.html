@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editorial Guidelines &mdash; The Bastion Archive</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sunwire"></div>
+<div class="shell">
+
+  <aside class="sidebar">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">The Bastion Archive</span>
+      <span class="brand-sub">Unofficial Codex &middot; Book One</span>
+    </a>
+
+    <div class="search-wrap">
+      <input type="text" id="archive-search" class="search-input" placeholder="Search the Archive&hellip;" autocomplete="off">
+      <div id="archive-search-results" class="search-results"></div>
+    </div>
+    <nav>
+      <div class="nav-group">
+        <h3>Characters</h3>
+        <ul>
+          <li><a href="characters/scorio.html">Scorio</a></li>
+          <li><a href="characters/lianshi.html">Lianshi</a></li>
+          <li><a href="characters/leonis.html">Leonis</a></li>
+          <li><a href="characters/naomi.html">Naomi</a></li>
+          <li><a href="characters/other-characters.html">Other Characters</a></li>
+        </ul>
+      </div>
+      <div class="nav-group">
+        <h3>Story</h3>
+        <ul>
+          <li><a href="story/book-1.html">Book 1</a></li>
+          <li><a href="story/book-2.html">Book 2: Rascor Plains</a></li>
+        </ul>
+      </div>
+      <div class="nav-group">
+        <h3>Places</h3>
+        <ul>
+          <li><a href="locations/bastion.html">Bastion</a></li>
+          <li class="nav-sub"><a href="locations/the-academy.html">The Academy</a></li>
+          <li class="nav-sub"><a href="locations/the-warrens.html">The Warrens</a></li>
+          <li class="nav-sub"><a href="locations/the-old-academy.html">The Old Academy</a></li>
+          <li><a href="locations/the-rascor-plains.html">Rascor Plains</a></li>
+          <li class="nav-sub"><a href="locations/the-fiery-shoals.html">The Fiery Shoals</a></li>
+        </ul>
+      </div>
+      <div class="nav-group">
+        <h3>Systems &amp; Lore</h3>
+        <ul>
+          <li><a href="world/great-souls.html">Great Souls &amp; Rank</a></li>
+          <li><a href="world/igneous-heart.html">The Igneous Heart &amp; Mana</a></li>
+          <li><a href="world/the-gauntlet.html">The Gauntlet</a></li>
+          <li><a href="world/the-houses.html">The Four Houses</a></li>
+          <li><a href="world/hell.html">Hell</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="sidebar-note">
+      Not part of the story. See below.
+    </div>
+  </aside>
+
+  <main>
+    <div class="breadcrumbs">
+      <a href="index.html">Archive</a><span class="sep">&rsaquo;</span>Editorial Guidelines
+    </div>
+
+    <div class="eyebrow"><span class="dot"></span>Meta &middot; For Editors, Not Readers</div>
+    <h1 class="title">Editorial Guidelines</h1>
+    <p class="subtitle">
+      This page is about maintaining the wiki, not about the story. It isn't lore, it has no
+      in-universe voice, and it's deliberately left out of the sidebar so readers don't stumble
+      into it. If you're an AI assistant picking up work on this archive in a new conversation:
+      read this page first, before touching any file.
+    </p>
+
+    <article style="max-width:820px;">
+
+      <h2 id="context">Why this page exists</h2>
+      <p>
+        Each new chat session starts with no memory of previous ones. The person maintaining
+        this archive has to re-explain conventions from scratch every time, which is slow and
+        error-prone &mdash; and on at least one occasion an assistant working on this archive
+        stated something as fact that wasn't actually in the source text. This page is the fix:
+        a single place documenting how this wiki is built, so a new session can orient itself by
+        reading a file instead of being told everything again.
+      </p>
+      <p>
+        This only works if it's actually read. Uploading or linking the current site to a new
+        session doesn't guarantee this page gets opened before edits start &mdash; say so
+        explicitly at the start of the conversation.
+      </p>
+
+      <h2 id="sourcing">Sourcing discipline</h2>
+      <p>
+        This is the rule that exists because of a real mistake, not a hypothetical one: while
+        writing the "Hell" overview article, an assistant stated that Jova Spike ruled LastRock
+        "for over a century." The source text never says this &mdash; it only says she died
+        there less than a year before her current rebirth. The duration was invented while
+        writing connective narrative prose, and stated as if it were sourced.
+      </p>
+      <p>
+        The failure mode: infobox fields and Trivia bullets get built mechanically from specific
+        lines and are comparatively safe. Connective or summary prose &mdash; the kind that
+        exists to make an article read smoothly, like region overviews, "why this matters"
+        sections, or one-line character blurbs &mdash; is where invented specifics slip in,
+        because it feels like writing rather than transcribing.
+      </p>
+      <p>
+        The rule going forward: any concrete claim in connective prose (a number, a duration, a
+        cause-and-effect statement, "the first," "the only," etc.) must trace to an actual line
+        in the source text. If it's a reasonable inference rather than a stated fact, say so
+        ("presumably," "it's not stated how long, but&hellip;") instead of asserting it plainly.
+        When in doubt, cut the specific rather than guess at one.
+      </p>
+
+      <h2 id="gauntlet-deaths">Gauntlet deaths aren't deaths</h2>
+      <p>
+        Eliminations during a Gauntlet run are not real deaths &mdash; the text is explicit that
+        Gauntlet participants who are "killed" inside a run are ejected/knocked out, not
+        actually killed. Wiki pages must not dramatize these as deaths: no "Dies in Chapter X"
+        Trivia bullets, no such events in a "Last death" infobox field, and if mentioned at all,
+        describe them neutrally ("eliminated from the run," "knocked out").
+      </p>
+      <p>
+        <strong>This rule is included deliberately, not as boilerplate.</strong> An earlier
+        assistant working on this archive over-corrected on this exact rule once &mdash;
+        over-applying it somewhere it didn't belong &mdash; and had to be walked back by the
+        person maintaining the wiki. A rule with a real track record of being misapplied, in
+        either direction, is exactly the kind worth writing down rather than re-deriving from
+        instinct each session.
+      </p>
+
+      <h2 id="continuity">Flag conflicts, don't silently resolve them</h2>
+      <p>
+        When new source material contradicts something already on the wiki (see: the Amity
+        entry in <a href="characters/defenders-of-bastion.html">Defenders of Bastion</a>, where
+        Book 1 says he dies and Book 2 shows him alive), don't quietly pick a side or delete
+        either claim. Add an inline note flagging the discrepancy and explaining what's known,
+        and say so explicitly when reporting back. This project has explicit prior feedback that
+        silently "fixing" continuity by guessing which source is right is worse than leaving a
+        visible flag.
+      </p>
+
+      <h2 id="chapter-refs">Chapter references must name the book</h2>
+      <p>
+        Book 2 restarts chapter numbering from Chapter 1, so a bare "Chapter 12" is ambiguous.
+        Every chapter reference on the wiki must be prefixed with the book: "Book 1, Chapter 12"
+        or "Book 2, Chapter 12."
+      </p>
+
+      <h2 id="character-template">The full character page template</h2>
+      <p>
+        Characters with enough material get a full page, in this section order: intro paragraph
+        &rarr; a <code>.section-jumps</code> anchor bar &rarr; Appearance &rarr; Personality
+        &rarr; Biography (subdivided by book using the accordion pattern below, once a character
+        has material from more than one book) &rarr; Abilities &rarr; Relationships (with
+        per-relationship <code>&lt;h3&gt;</code> subsections) &rarr; Trivia &rarr; a pull-quote
+        (<code>.archive-quote</code>) &rarr; an <code>.infobox</code> aside with exactly ten
+        fields (Also known as, Status, Rank, Highest rank attained, Rebirths, Last death, First
+        appears, Affiliation, Allies, Enemies) &rarr; a <code>.stub-notice</code> &rarr;
+        <code>.category-tags</code> &rarr; the standard footer.
+      </p>
+
+      <h2 id="biography-accordion">Biography accordion</h2>
+      <p>
+        Once a character's Biography spans more than one book, wrap each book's content in
+        <code>&lt;details class="bio-book"&gt;&lt;summary&gt;Book N&lt;/summary&gt;&hellip;
+        &lt;/details&gt;</code>. Each book toggles independently &mdash; this is not a
+        single-open accordion, and doesn't use JavaScript. The most recent book defaults open
+        (the <code>open</code> attribute); earlier books default closed. Existing anchor links
+        into a character's Biography section (e.g. a link to
+        <code>scorio.html#biography</code>) still resolve &mdash; the id lives on the
+        <code>&lt;h2&gt;</code>, outside the accordion &mdash; but they'll land on a heading with
+        the linked book's content possibly collapsed. That's an accepted tradeoff, not a bug.
+      </p>
+
+      <h2 id="lean-template">The lean minor-character template</h2>
+      <p>
+        Characters without enough material for the full template still get their own page
+        (rather than living inside a combined list) using a leaner structure: eyebrow &rarr;
+        title &rarr; one-line subtitle &rarr; a two-column layout with a single flexible body
+        (no forced Appearance/Personality/Relationships headers) and a slim
+        <code>.infobox</code> with only three fields (Status, Affiliation, First appears)
+        &rarr; a <code>.cut-note</code> explaining it's a minor entry &rarr;
+        <code>.category-tags</code>. It can grow into the full template later without moving or
+        renaming the file.
+      </p>
+      <p>
+        Genuine multi-person ensembles that share one scene or fate (like
+        <a href="characters/defenders-of-bastion.html">Defenders of Bastion</a> or
+        <a href="characters/the-warrens-group.html">The Warrens Group</a>) get one shared lean
+        page with a roster, rather than being split into a page per person.
+      </p>
+
+      <h2 id="sidebar-nav">Sidebar navigation</h2>
+      <p>
+        The Characters group is permanently fixed at Scorio, Lianshi, Leonis, Naomi, and Other
+        Characters &mdash; no one else is added here regardless of how central they become;
+        promoted characters get a card in
+        <a href="characters/other-characters.html">Other Characters</a> instead. Places are
+        grouped into hub clusters with a clickable parent and indented
+        <code>.nav-sub</code> children: Bastion (Academy, Warrens, Old Academy) and Rascor
+        Plains (Fiery Shoals). Systems &amp; Lore is a flat list of primer/reference articles,
+        currently ending with Hell.
+      </p>
+      <p>
+        Pages the sidebar doesn't need to carry &mdash; supplementary geography or history that
+        isn't essential to following the main story &mdash; use the "deep cut" pattern instead:
+        an eyebrow reading "Deep Cut &middot; Not linked from the main index," and no entry in
+        any <code>nav-group</code>. They're still reachable via inline links and the search
+        index.
+      </p>
+
+      <h2 id="workflow">Delivery workflow</h2>
+      <p>
+        There's no push access to the canonical GitHub repo
+        (<a href="https://github.com/Vehnum/Bastion/tree/main/Bastion">Vehnum/Bastion</a>).
+        Every change gets packaged as a zip and handed over for manual re-upload. Before
+        shipping: run a link/anchor integrity check across every HTML file (every
+        <code>href</code>/<code>src</code> resolves to a real file, and every
+        <code>#fragment</code> resolves to a real <code>id</code> in the target), remove any
+        scratch files (Python scripts, notes) from the working copy, zip, verify contents with
+        <code>unzip -l</code>, and only then hand it over.
+      </p>
+
+      <h2 id="index-updates">Search index</h2>
+      <p>
+        <code>search-index.js</code> needs a new entry any time a page is added, moved, or
+        renamed &mdash; title, type, url, and a handful of keywords someone might actually
+        search for. Check it resolves with <code>node --check search-index.js</code> and that
+        every <code>url</code> in it points to a real file before shipping.
+      </p>
+
+    </article>
+
+    <footer class="archive-footer">
+      <span>The Bastion Archive</span>
+      <span><a href="index.html">&larr; Back to Archive home</a></span>
+    </footer>
+  </main>
+
+</div>
+<script>window.BASE_DEPTH = "";</script>
+<script src="search-index.js"></script>
+<script src="search.js"></script>
+</body>
+</html>
